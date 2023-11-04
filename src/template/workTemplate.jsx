@@ -1,4 +1,4 @@
-export default function WorkTemplate({ experience }) {
+export default function WorkTemplate({ experience, onDelete }) {
     return (
         <div className="workDisplay">
             <p>{experience.position}</p>
@@ -6,6 +6,7 @@ export default function WorkTemplate({ experience }) {
             <p>{experience.startDate}</p>
             <p>{experience.endDate}</p>
             <p>{experience.jobDesc}</p>
+            <button onClick={() => onDelete(experience.index)}>Delete</button>
         </div>
     );
 }

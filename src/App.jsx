@@ -1,11 +1,10 @@
-import Content from "./content"
+import Content from './content';
 function App() {
-
-  return (
-    <>
- <Content />
-    </>
-  )
+    return (
+        <>
+            <Content />
+        </>
+    );
 }
 
-export default App
+export default App;

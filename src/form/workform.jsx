@@ -1,7 +1,4 @@
-export default function WorkForm({
-    experience,
-onChange,
-}) {
+export default function WorkForm({ experience, onChange }) {
     return (
         <>
             <div>

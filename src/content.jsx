@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import InfoForm from './form/infoform';
 import EdForm from './form/edform';
 import WorkForm from './form/workform';
@@ -34,6 +34,11 @@ export default function Content() {
         endDate: 'June 2020',
         index: uuidv4(),
     });
+
+    useEffect(() => {
+        setExperiences([experience]);
+        setEducations([education]);
+    }, []);
 
     function onPersonalChange(e) {
         setPersonalInfo({
@@ -77,6 +82,15 @@ export default function Content() {
             index: uuidv4(),
         });
     }
+
+    function deleteExperience(deleteIndex) {
+        setExperiences(experiences.filter((exp) => exp.index !== deleteIndex));
+    }
+
+    function deleteEducation(deleteIndex) {
+        setEducations(educations.filter((exp) => exp.index !== deleteIndex));
+    }
+
     return (
         <>
             <div className="cvTemplate">
@@ -99,25 +113,20 @@ export default function Content() {
                 <div className="templateSection">
                     <InfoTemplate personalInfo={personalInfo} />
 
-                    {experience.position && (
-                        <WorkTemplate
-                            key={experience.index}
-                            experience={experience}
-                        />
-                    )}
                     {experiences.map((exp) => (
-                        <WorkTemplate key={exp.index} experience={exp} />
+                        <WorkTemplate
+                            key={exp.index}
+                            experience={exp}
+                            onDelete={deleteExperience}
+                        />
                     ))}
 
-                    {education.degree && (
-                        <EdTemplate
-                            key={education.index}
-                            education={education}
-                        />
-                    )}
-
                     {educations.map((ed) => (
-                        <EdTemplate key={ed.index} education={ed} />
+                        <EdTemplate
+                            key={ed.index}
+                            education={ed}
+                            onDelete={deleteEducation}
+                        />
                     ))}
                 </div>
             </div>
