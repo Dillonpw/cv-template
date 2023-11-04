@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import InfoForm from './form/infoform';
+//import EdForm from './form/edform';
+//import workForm from './form/workform'
+import InfoTemplate from './template/infoTemplate';
 
 export default function Content() {
     const [personalInfo, setPersonalInfo] = useState({
@@ -59,13 +62,7 @@ export default function Content() {
                         addEmail={onPersonalChange}
                         addJobtitle={onPersonalChange}
                     ></InfoForm>
-                    <div className="personalInfoDisplay">
-                        <p>{personalInfo.firstName}</p>
-                        <p>L{personalInfo.lastName}</p>
-                        <p>{personalInfo.email}</p>
-                        <p>{personalInfo.location}</p>
-                        <p>{personalInfo.jobTitle}</p>
-                    </div>
+                    <InfoTemplate personalInfo={personalInfo}/>
                 </div>
             </div>
         </>
