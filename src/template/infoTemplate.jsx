@@ -1,6 +1,6 @@
 export default function InfoTemplate({ personalInfo }) {
     return (
-        <div className="personalInfoDisplay">
+        <div className="infoDisplay">
             <p>{personalInfo.firstName}</p>
             <p>{personalInfo.lastName}</p>
             <p>{personalInfo.email}</p>
