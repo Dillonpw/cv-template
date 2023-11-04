@@ -1,3 +1,6 @@
+import PropTypes from 'prop-types'
+
+
 export default function EdForm({ education, onChange }) {
     return (
         <>
@@ -34,3 +37,14 @@ export default function EdForm({ education, onChange }) {
         </>
     );
 }
+
+EdForm.propTypes = {
+    education: PropTypes.shape({
+        degree: PropTypes.string,
+        schoolName: PropTypes.string,
+        startDate: PropTypes.string,
+        endDate: PropTypes.string,
+        index: PropTypes.number.isRequired,
+    }).isRequired,
+    onChange: PropTypes.func.isRequired,
+};

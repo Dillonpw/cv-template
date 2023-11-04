@@ -38,7 +38,7 @@ export default function Content() {
     useEffect(() => {
         setExperiences([experience]);
         setEducations([education]);
-    }, []);
+    },[experience,education]);
 
     function onPersonalChange(e) {
         setPersonalInfo({

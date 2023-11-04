@@ -1,3 +1,6 @@
+import PropTypes from 'prop-types'
+
+
 export default function InfoForm({ personalInfo, onChange }) {
     return (
         <div>
@@ -39,3 +42,14 @@ export default function InfoForm({ personalInfo, onChange }) {
         </div>
     );
 }
+
+InfoForm.propTypes = {
+    personalInfo: PropTypes.shape({
+        firstName: PropTypes.string,
+        lastName: PropTypes.string,
+        email: PropTypes.string,
+        location: PropTypes.string,
+        jobTitle: PropTypes.string,
+    }).isRequired,
+    onChange: PropTypes.func.isRequired,
+};

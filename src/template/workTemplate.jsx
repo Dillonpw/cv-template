@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export default function WorkTemplate({ experience, onDelete }) {
     return (
         <div className="workDisplay">
@@ -10,3 +12,15 @@ export default function WorkTemplate({ experience, onDelete }) {
         </div>
     );
 }
+
+WorkTemplate.propTypes = {
+    experience: PropTypes.shape({
+        position: PropTypes.string,
+        company: PropTypes.string,
+        startDate: PropTypes.string,
+        endDate: PropTypes.string,
+        jobDesc: PropTypes.string,
+        index: PropTypes.string.isRequired,
+    }).isRequired,
+    onDelete: PropTypes.func.isRequired,
+};

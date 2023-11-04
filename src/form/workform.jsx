@@ -1,3 +1,6 @@
+import PropTypes from 'prop-types'
+
+
 export default function WorkForm({ experience, onChange }) {
     return (
         <>
@@ -41,3 +44,15 @@ export default function WorkForm({ experience, onChange }) {
         </>
     );
 }
+
+WorkForm.propTypes = {
+    experience: PropTypes.shape({
+        position: PropTypes.string,
+        company: PropTypes.string,
+        startDate: PropTypes.string,
+        endDate: PropTypes.string,
+        jobDesc: PropTypes.string,
+        index: PropTypes.string.isRequired,
+    }).isRequired,
+    onChange: PropTypes.func.isRequired,
+};
