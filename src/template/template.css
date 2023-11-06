@@ -1,0 +1,12 @@
+.infoDisplay{
+    background-color: blueviolet;
+    color: white;
+}
+.infoDisplay > *{
+    margin:0;
+    padding: .25rem;
+}
+
+.infoDisplay,.workDisplay{
+    border-bottom: 1px solid black
+}

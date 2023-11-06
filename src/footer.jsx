@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="credits">
+        <footer className="footer">
             <p id="credit1">
                 Created by Dillon Walsh. For more of my work check{' '}
                 <a

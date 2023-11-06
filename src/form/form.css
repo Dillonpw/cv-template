@@ -1,0 +1,18 @@
+.form{
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+    border: 1px solid black;
+    margin-bottom: .25rem;
+    border-radius: .25rem;
+
+}
+
+input{
+    border: 1px solig grey;
+    border-radius: .25rem;
+    outline:hidden;
+    padding: .25rem;
+    margin: .25rem;
+    flex-wrap: nowrap;
+}

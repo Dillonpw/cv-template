@@ -4,7 +4,8 @@ import PropTypes from 'prop-types'
 export default function WorkForm({ experience, onChange }) {
     return (
         <>
-            <div>
+            <div className='form'>
+            <h2>Experience</h2>
                 <input
                     name="position"
                     type="text"
@@ -52,7 +53,7 @@ WorkForm.propTypes = {
         startDate: PropTypes.string,
         endDate: PropTypes.string,
         jobDesc: PropTypes.string,
-        index: PropTypes.string.isRequired,
+        index: PropTypes.number.isRequired,
     }).isRequired,
     onChange: PropTypes.func.isRequired,
 };

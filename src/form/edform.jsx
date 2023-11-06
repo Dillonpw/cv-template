@@ -4,7 +4,9 @@ import PropTypes from 'prop-types'
 export default function EdForm({ education, onChange }) {
     return (
         <>
-            <div>
+        
+            <div className='form'>
+            <h2>Education</h2>
                 <input
                     name="degree"
                     type="text"

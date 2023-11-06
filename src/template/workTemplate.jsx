@@ -20,7 +20,7 @@ WorkTemplate.propTypes = {
         startDate: PropTypes.string,
         endDate: PropTypes.string,
         jobDesc: PropTypes.string,
-        index: PropTypes.string.isRequired,
+        index: PropTypes.number.isRequired,
     }).isRequired,
     onDelete: PropTypes.func.isRequired,
 };

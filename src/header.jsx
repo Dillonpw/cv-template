@@ -7,7 +7,7 @@ export default function Header() {
         );
     }
     return (
-        <div>
+        <div className="header">
             <h1>CV Template</h1>
             <button onClick={handleMoreInfo}>More Info</button>
         </div>
