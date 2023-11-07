@@ -1,30 +1,36 @@
-:root{
+:root {
     font-family: sans-serif;
+    font-size: 16px;
 }
 
-html{
-    padding:0;
-    margin:0;
+body {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 0 0.25rem;
+    margin-bottom: 1rem;
+    box-shadow: 0px 3px 6px 0px;
 }
 
-.cvTemplate{
-    display:grid;
+.cvTemplate {
+    display: grid;
     grid-template-columns: 1fr, 2fr;
     grid-template-rows: 1fr;
-
 }
 
-.formSection{
+.formSection {
     grid-area: 1/1/2/2;
+    margin-left: .5rem;
 }
 
-.templateSection{
+.templateSection {
     border: 1px solid black;
     grid-area: 1/2/2/4;
+    margin-right: .5rem;
 }

@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 
 export default function WorkTemplate({ experience, onDelete }) {
     return (
+        <>
         <div className="workDisplay">
             <p>{experience.position}</p>
             <p>{experience.company}</p>
@@ -10,6 +11,7 @@ export default function WorkTemplate({ experience, onDelete }) {
             <p>{experience.jobDesc}</p>
             <button onClick={() => onDelete(experience.index)}>Delete</button>
         </div>
+        </>
     );
 }
 

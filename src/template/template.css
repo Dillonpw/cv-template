@@ -1,12 +1,21 @@
+.infoDisplay, .workDisplay, .edDisplay{
+    padding: 1rem;
+}
+
 .infoDisplay{
     background-color: blueviolet;
     color: white;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
 }
+
 .infoDisplay > *{
     margin:0;
     padding: .25rem;
 }
 
+
 .infoDisplay,.workDisplay{
-    border-bottom: 1px solid black
+    border-bottom: 1px solid black;
 }
+

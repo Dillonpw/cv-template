@@ -99,6 +99,7 @@ export default function Content() {
                         personalInfo={personalInfo}
                         onChange={onPersonalChange}
                     />
+                    
                     <WorkForm
                         experience={experience}
                         onChange={onExperienceChange}
@@ -112,6 +113,7 @@ export default function Content() {
                 </div>
                 <div className="templateSection">
                     <InfoTemplate personalInfo={personalInfo} />
+                    <h2><u>Professional History</u></h2>
 
                     {experiences.map((exp) => (
                         <WorkTemplate
@@ -120,6 +122,7 @@ export default function Content() {
                             onDelete={deleteExperience}
                         />
                     ))}
+        <h2><u>Education</u></h2>
 
                     {educations.map((ed) => (
                         <EdTemplate

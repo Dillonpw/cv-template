@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
 export default function Footer() {
     return (
         <footer className="footer">
@@ -9,7 +12,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    Github
+<FontAwesomeIcon icon={faGithub} />
                 </a>
             </p>
             <div className="copyr">
