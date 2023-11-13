@@ -3,7 +3,7 @@ export default function Header() {
         e.preventDefault();
         e.stopPropagation();
         alert(
-            "fill out the inputs as you see fit, and watch your personal information populate automatically \nThen move down to the experiecne and education fields to and submit them to the form when you're ready!"
+            "fill out the inputs as you see fit, and watch your personal information populate automatically \nThen move down to the experience and education fields and submit when you're ready!"
         );
     }
     return (
