@@ -8,9 +8,7 @@ export default function InfoTemplate({ personalInfo }) {
     return (
         <div className="infoDisplay">
             <h2 id="name">
-                <u>
-                    {personalInfo.firstName} {personalInfo.lastName}{' '}
-                </u>
+                {personalInfo.firstName} {personalInfo.lastName}{' '}
             </h2>
             <p id="email">
                 <FontAwesomeIcon icon={faEnvelope} /> {personalInfo.email}

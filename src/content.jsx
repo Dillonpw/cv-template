@@ -97,8 +97,6 @@ export default function Content() {
         );
     }
 
-
-    
     return (
         <>
             <div className="cvTemplate">
@@ -123,7 +121,9 @@ export default function Content() {
                         />
                         <button onClick={addEducation}>Add Education</button>
                     </div>
-                    <button onClick={() => window.location.reload()}>Reset</button>
+                    <button onClick={() => window.location.reload()}>
+                        Reset
+                    </button>
                 </div>
                 <div className="templateSection">
                     <InfoTemplate personalInfo={personalInfo} />

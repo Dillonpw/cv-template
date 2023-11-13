@@ -3,13 +3,20 @@ import PropTypes from 'prop-types';
 export default function EdTemplate({ education, onDelete }) {
     return (
         <>
-        <div className="edDisplay">
-            <p>{education.degree}</p>
-            <p>{education.schoolName}</p>
-            <p>{education.startDate}</p>
-            <p>{education.endDate}</p>
-            <button onClick={(e) => { e.stopPropagation(); onDelete(education.index)}}>Delete</button>
-        </div>
+            <div className="edDisplay">
+                <h3>{education.schoolName}</h3>
+                <p>{education.degree}</p>
+                <p>{education.startDate}</p>
+                <p>{education.endDate}</p>
+                <button
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        onDelete(education.index);
+                    }}
+                >
+                    Delete
+                </button>
+            </div>
         </>
     );
 }

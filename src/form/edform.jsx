@@ -1,19 +1,10 @@
-import PropTypes from 'prop-types'
-
+import PropTypes from 'prop-types';
 
 export default function EdForm({ education, onChange }) {
     return (
         <>
-        
-            <div className='form'>
-            <h2>Education</h2>
-                <input
-                    name="degree"
-                    type="text"
-                    placeholder="Degree"
-                    value={education.degree}
-                    onChange={onChange}
-                />
+            <div className="form">
+                <h2>Education</h2>
                 <input
                     name="schoolName"
                     type="text"
@@ -21,6 +12,14 @@ export default function EdForm({ education, onChange }) {
                     value={education.schoolName}
                     onChange={onChange}
                 />
+                <input
+                    name="degree"
+                    type="text"
+                    placeholder="Degree"
+                    value={education.degree}
+                    onChange={onChange}
+                />
+
                 <input
                     name="startDate"
                     type="text"

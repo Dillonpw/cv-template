@@ -1,17 +1,18 @@
-.form{
-    display:flex;
+.form {
+    display: flex;
     flex-direction: column;
 }
 
-input, textarea{
+input,
+textarea {
     border: 1px solig grey;
-    border-radius: .25rem;
-    outline:hidden;
-    padding: .25rem;
-    margin: .25rem;
+    border-radius: 0.25rem;
+    outline: hidden;
+    padding: 0.25rem;
+    margin: 0.25rem;
     flex-wrap: nowrap;
     font-family: sans-serif;
     max-width: 90%;
     font-weight: 400;
-    font-size: 14px
+    font-size: 14px;
 }

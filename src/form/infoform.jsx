@@ -1,9 +1,8 @@
-import PropTypes from 'prop-types'
-
+import PropTypes from 'prop-types';
 
 export default function InfoForm({ personalInfo, onChange }) {
     return (
-        <div className='form'>
+        <div className="form">
             <h2>Personal Info</h2>
             <input
                 name="firstName"

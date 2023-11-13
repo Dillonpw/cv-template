@@ -27,22 +27,44 @@ body {
 
 .formSection {
     grid-area: 1/1/2/2;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
 }
 
 .templateSection {
     border: 1px solid black;
     grid-area: 1/2/2/4;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
 }
 
-.infoFormBox, .workFormBox, .edFormBox {
-    display:flex;
+.templateSection > h2 {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.infoFormBox,
+.workFormBox,
+.edFormBox {
+    display: flex;
     flex-direction: column;
     width: 80%;
     border: 1px solid black;
     margin-bottom: 1rem;
-    border-radius: .25rem;
-    padding: .5rem;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.footer > p {
+    line-height: 1.5rem;
+}
+
+#profile-link {
+    padding: 0.2rem;
+}

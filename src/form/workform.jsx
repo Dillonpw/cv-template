@@ -1,18 +1,10 @@
-import PropTypes from 'prop-types'
-
+import PropTypes from 'prop-types';
 
 export default function WorkForm({ experience, onChange }) {
     return (
         <>
-            <div className='form'>
-            <h2>Experience</h2>
-                <input
-                    name="position"
-                    type="text"
-                    placeholder="Position"
-                    value={experience.position}
-                    onChange={onChange}
-                />
+            <div className="form">
+                <h2>Experience</h2>
                 <input
                     name="company"
                     type="text"
@@ -20,6 +12,14 @@ export default function WorkForm({ experience, onChange }) {
                     value={experience.company}
                     onChange={onChange}
                 />
+                <input
+                    name="position"
+                    type="text"
+                    placeholder="Position"
+                    value={experience.position}
+                    onChange={onChange}
+                />
+
                 <input
                     name="startDate"
                     type="text"

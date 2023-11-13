@@ -1,21 +1,25 @@
-.infoDisplay, .workDisplay, .edDisplay{
-    padding: 1rem;
+.infoDisplay,
+.workDisplay,
+.edDisplay {
+    padding: 0.5rem 2rem;
+    align-items: center;
+    justify-items: center;
 }
 
-.infoDisplay{
-    background-color: blueviolet;
+.infoDisplay {
+    background-color: darkblue;
     color: white;
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 2rem 0.5rem;
 }
 
-.infoDisplay > *{
-    margin:0;
-    padding: .25rem;
+.infoDisplay > * {
+    margin: 0;
+    padding: 0.25rem;
 }
 
-
-.infoDisplay,.workDisplay{
+.infoDisplay,
+.workDisplay {
     border-bottom: 1px solid black;
 }
-
