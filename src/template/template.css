@@ -1,9 +1,7 @@
 .infoDisplay,
 .workDisplay,
 .edDisplay {
-    padding: 0.5rem 2rem;
     align-items: center;
-    justify-items: center;
 }
 
 .infoDisplay {
@@ -11,7 +9,7 @@
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 2rem 0.5rem;
+    padding: 2rem 6rem;
 }
 
 .infoDisplay > * {
