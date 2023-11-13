@@ -34,7 +34,7 @@ export default function WorkForm({ experience, onChange }) {
                     value={experience.endDate}
                     onChange={onChange}
                 />
-                <input
+                <textarea
                     name="jobDesc"
                     type="text"
                     placeholder="Job description"

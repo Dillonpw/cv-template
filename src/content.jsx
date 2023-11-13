@@ -39,7 +39,6 @@ export default function Content() {
         setExperiences([experience]);
         setEducations([education]);
     }, []);
-    
 
     function onPersonalChange(e) {
         setPersonalInfo({
@@ -62,65 +61,75 @@ export default function Content() {
     }
 
     function addExperience() {
-        const newExperience = { ...experience, index: uuidv4() }
+        const newExperience = { ...experience, index: uuidv4() };
         setExperiences([...experiences, newExperience]);
-       setExperience({
+        setExperience({
             position: '',
             company: '',
             startDate: '',
             endDate: '',
             jobDesc: '',
- 
         });
     }
 
     function addEducation() {
-        const newEducation = { ...education, index: uuidv4() }
+        const newEducation = { ...education, index: uuidv4() };
         setEducations([...educations, newEducation]);
         setEducation({
             degree: '',
             schoolName: '',
             startDate: '',
             endDate: '',
-  
         });
     }
 
     function deleteExperience(deleteIndex) {
         console.log('Trying to delete:', deleteIndex);
-        setExperiences(experiences => experiences.filter(exp => exp.index !== deleteIndex));
+        setExperiences((experiences) =>
+            experiences.filter((exp) => exp.index !== deleteIndex)
+        );
     }
-    
+
     function deleteEducation(deleteIndex) {
         console.log('Trying to delete:', deleteIndex);
-        setEducations(educations => educations.filter(ed => ed.index !== deleteIndex));
+        setEducations((educations) =>
+            educations.filter((ed) => ed.index !== deleteIndex)
+        );
     }
-    
-    
 
+
+    
     return (
         <>
             <div className="cvTemplate">
                 <div className="formSection">
-                    <InfoForm
-                        personalInfo={personalInfo}
-                        onChange={onPersonalChange}
-                    />
-                    
-                    <WorkForm
-                        experience={experience}
-                        onChange={onExperienceChange}
-                    />
-                    <button onClick={addExperience}>Add Experience</button>
-                    <EdForm
-                        education={education}
-                        onChange={onEducationChange}
-                    />
-                    <button onClick={addEducation}>Add Education</button>
+                    <div className="infoFormBox">
+                        <InfoForm
+                            personalInfo={personalInfo}
+                            onChange={onPersonalChange}
+                        />
+                    </div>
+                    <div className="workFormBox">
+                        <WorkForm
+                            experience={experience}
+                            onChange={onExperienceChange}
+                        />
+                        <button onClick={addExperience}>Add Experience</button>
+                    </div>
+                    <div className="edFormBox">
+                        <EdForm
+                            education={education}
+                            onChange={onEducationChange}
+                        />
+                        <button onClick={addEducation}>Add Education</button>
+                    </div>
+                    <button onClick={() => window.location.reload()}>Reset</button>
                 </div>
                 <div className="templateSection">
                     <InfoTemplate personalInfo={personalInfo} />
-                    <h2><u>Professional History</u></h2>
+                    <h2>
+                        <u>Professional History</u>
+                    </h2>
 
                     {experiences.map((exp) => (
                         <WorkTemplate
@@ -129,7 +138,9 @@ export default function Content() {
                             onDelete={deleteExperience}
                         />
                     ))}
-        <h2><u>Education</u></h2>
+                    <h2>
+                        <u>Education</u>
+                    </h2>
 
                     {educations.map((ed) => (
                         <EdTemplate
