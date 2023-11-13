@@ -9,7 +9,7 @@ export default function WorkTemplate({ experience, onDelete }) {
             <p>{experience.startDate}</p>
             <p>{experience.endDate}</p>
             <p>{experience.jobDesc}</p>
-            <button onClick={() => onDelete(experience.index)}>Delete</button>
+            <button onClick={(e) => {e.stopPropagation(); onDelete(experience.index)}}>Delete</button>
         </div>
         </>
     );
@@ -22,7 +22,7 @@ WorkTemplate.propTypes = {
         startDate: PropTypes.string,
         endDate: PropTypes.string,
         jobDesc: PropTypes.string,
-        index: PropTypes.number.isRequired,
+        index: PropTypes.string.isRequired,
     }).isRequired,
     onDelete: PropTypes.func.isRequired,
 };

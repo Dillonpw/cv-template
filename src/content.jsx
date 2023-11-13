@@ -38,7 +38,8 @@ export default function Content() {
     useEffect(() => {
         setExperiences([experience]);
         setEducations([education]);
-    },[experience,education]);
+    }, []);
+    
 
     function onPersonalChange(e) {
         setPersonalInfo({
@@ -61,35 +62,41 @@ export default function Content() {
     }
 
     function addExperience() {
-        setExperiences([...experiences, experience]);
-        setExperience({
+        const newExperience = { ...experience, index: uuidv4() }
+        setExperiences([...experiences, newExperience]);
+       setExperience({
             position: '',
             company: '',
             startDate: '',
             endDate: '',
             jobDesc: '',
-            index: uuidv4(),
+ 
         });
     }
 
     function addEducation() {
-        setEducations([...educations, education]);
+        const newEducation = { ...education, index: uuidv4() }
+        setEducations([...educations, newEducation]);
         setEducation({
             degree: '',
             schoolName: '',
             startDate: '',
             endDate: '',
-            index: uuidv4(),
+  
         });
     }
 
     function deleteExperience(deleteIndex) {
-        setExperiences(experiences.filter((exp) => exp.index !== deleteIndex));
+        console.log('Trying to delete:', deleteIndex);
+        setExperiences(experiences => experiences.filter(exp => exp.index !== deleteIndex));
     }
-
+    
     function deleteEducation(deleteIndex) {
-        setEducations(educations.filter((exp) => exp.index !== deleteIndex));
+        console.log('Trying to delete:', deleteIndex);
+        setEducations(educations => educations.filter(ed => ed.index !== deleteIndex));
     }
+    
+    
 
     return (
         <>

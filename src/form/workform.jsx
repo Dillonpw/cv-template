@@ -53,7 +53,7 @@ WorkForm.propTypes = {
         startDate: PropTypes.string,
         endDate: PropTypes.string,
         jobDesc: PropTypes.string,
-        index: PropTypes.number.isRequired,
+        index: PropTypes.string.isRequired,
     }).isRequired,
     onChange: PropTypes.func.isRequired,
 };

@@ -5,7 +5,8 @@ export default function Footer() {
     return (
         <footer className="footer">
             <p id="credit1">
-                Created by Dillon Walsh. For more of my work check{' '}
+                Created by Dillon Walsh.</p> 
+                <p>For more of my work check{' '}
                 <a
                     id="profile-link"
                     href="https://github.com/Dillonpw/projects"

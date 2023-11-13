@@ -46,7 +46,7 @@ EdForm.propTypes = {
         schoolName: PropTypes.string,
         startDate: PropTypes.string,
         endDate: PropTypes.string,
-        index: PropTypes.number.isRequired,
+        index: PropTypes.string.isRequired,
     }).isRequired,
     onChange: PropTypes.func.isRequired,
 };
