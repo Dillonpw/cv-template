@@ -4,6 +4,6 @@ import macrosPlugin from 'vite-plugin-babel-macros'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/cv-template/",
+  base: ".",
   plugins: [react(), macrosPlugin()],
 })
