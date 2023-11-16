@@ -4,10 +4,9 @@ export default function EdTemplate({ education, onDelete }) {
     return (
         <>
             <div className="edDisplay">
-                <h3>{education.schoolName}</h3>
-                <p>{education.degree}</p>
-                <p>{education.startDate}</p>
-                <p>{education.endDate}</p>
+                <h3>School: {education.schoolName}</h3>
+                <p>Degree: {education.degree}</p>
+                <p>{education.startDate} - {education.endDate}</p>
                 <button
                     onClick={(e) => {
                         e.stopPropagation();
