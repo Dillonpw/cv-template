@@ -1,3 +1,5 @@
+
+
 export default function Header() {
     function handleMoreInfo(e) {
         e.preventDefault();
@@ -8,6 +10,7 @@ export default function Header() {
     }
     return (
         <div className="header">
+            <img src="src/assets/logo.svg" alt="Logo"/>
             <h1>CV Template</h1>
             <button onClick={handleMoreInfo}>More Info</button>
         </div>
