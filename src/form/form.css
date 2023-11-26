@@ -5,7 +5,7 @@
 
 input,
 textarea {
-    border: 1px solig grey;
+    border: 1px solid grey;
     border-radius: 0.25rem;
     outline: hidden;
     padding: 0.25rem;
