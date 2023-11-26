@@ -1,7 +1,6 @@
 .form {
     display: flex;
     flex-direction: column;
-    
 }
 
 input,
@@ -18,15 +17,17 @@ textarea {
     font-size: 14px;
 }
 
-.infoFormBox, .workFormBox, .edFormBox{
+.infoFormBox,
+.workFormBox,
+.edFormBox {
     box-shadow: 0 0 6px 0px, inset 0 0 8px grey;
-border: none;
+    border: none;
 }
 
-.workFormBox > button{
-    width: 99%
+.workFormBox > button {
+    width: 99%;
 }
 
-.edFormBox > button{
-    width: 99%
+.edFormBox > button {
+    width: 99%;
 }

@@ -129,7 +129,7 @@ export default function Content() {
                 <div className="templateSection">
                     <InfoTemplate personalInfo={personalInfo} />
                     <h2>
-                        <u>Professional History</u>
+                        <u>Professional</u>
                     </h2>
 
                     {experiences.map((exp) => (
