@@ -60,7 +60,6 @@ export default function Content() {
         });
     }
 
-
     function addExperience() {
         const newExperience = { ...experience, index: uuidv4() };
         setExperiences([...experiences, newExperience]);

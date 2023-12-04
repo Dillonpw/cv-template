@@ -6,7 +6,9 @@ export default function WorkTemplate({ experience, onDelete }) {
             <div className="workDisplay">
                 <h3>{experience.company}</h3>
                 <p>Job Title: {experience.position}</p>
-                <p>{experience.startDate} - {experience.endDate}</p>
+                <p>
+                    {experience.startDate} - {experience.endDate}
+                </p>
                 <p>{experience.jobDesc}</p>
                 <button
                     onClick={(e) => {

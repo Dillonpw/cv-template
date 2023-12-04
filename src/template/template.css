@@ -1,8 +1,7 @@
-
 .workDisplay,
 .edDisplay {
     align-items: center;
-    padding: .5rem 2rem;
+    padding: 0.5rem 2rem;
 }
 
 .infoDisplay {
@@ -11,14 +10,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 2rem 6rem;
-    border-radius: .25rem .25rem 0 0;
-
+    border-radius: 0.25rem 0.25rem 0 0;
 }
 
 .infoDisplay > * {
     margin: 0;
     padding: 0.25rem;
-
 }
 
 .infoDisplay,
