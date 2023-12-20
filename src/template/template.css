@@ -5,7 +5,7 @@
 }
 
 .infoDisplay {
-    background-color: darkblue;
+    background-color: rgb(63, 63, 245);
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
