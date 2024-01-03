@@ -17,7 +17,7 @@ export default function Footer() {
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
                 <br />
-                &copy;<span id="year">2023</span> All Rights Reserved
+                &copy;<span id="year">2024</span> All Rights Reserved
             </p>
         </footer>
     );
