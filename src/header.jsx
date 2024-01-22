@@ -11,16 +11,16 @@ export default function Header() {
     return (
         <div className="header">
             <img src={logo} alt="Logo" />
-            <h1>CV Template</h1>
+            <button className="headBtn" onClick={handleMoreInfo}>
+                More Info
+            </button>
             <button
                 className="headBtn"
                 onClick={() => window.location.reload()}
             >
                 Reset
             </button>
-            <button className="headBtn" onClick={handleMoreInfo}>
-                More Info
-            </button>
+   
         </div>
     );
 }
